@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bottleblog
+Version: 0.1dev
+Summary: Blog in Bottle
+Home-page: http://kyleterry.com/p/bottleblog
+Author: Kyle Terry
+Author-email: kyle@kyleterry.com
+License: UNKNOWN
+Description: A blogging platform build in the Bottle framework
+Keywords: blog
+Platform: UNKNOWN
