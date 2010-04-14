@@ -1,7 +1,7 @@
 from bottleblog.bottle import route, request, response, abort
-from bottleblog import config
+import bottleblog
 
 @route('/')
 def index():
-    print config
+    print bottleblog.app_config
     return '/ index'

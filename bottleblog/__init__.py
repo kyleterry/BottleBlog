@@ -1,6 +1,6 @@
 import bottle
 from paste.config import DispatchingConfig
 
-config = DispatchingConfig()
+__all__ = ['app_config', 'session']
 
-__all__ = ['config', 'session']
+app_config = {}

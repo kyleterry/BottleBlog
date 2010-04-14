@@ -1,4 +1,4 @@
-from bottleblog import bottle, config
+from bottleblog import bottle
 import bottleblog
 
 #controllers
@@ -8,7 +8,5 @@ from config.middleware import make_app
 
 def app_factory(global_config, **local_conf):
     app = make_app()
-    print global_config
-    bottleblog.config = global_config
-    bottleblog.session = bottle.request.environ.get('beaker.session')
+    bottleblog.app_config = global_config
     return app
