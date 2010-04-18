@@ -1,5 +1,7 @@
 from bottleblog.bottle import default_app
 from beaker.middleware import SessionMiddleware
+from simpleacl.middleware import AclMiddleware
+import bottleblog
 
 def make_app():
     app = default_app()
@@ -11,5 +13,6 @@ def make_app():
         'session.auto': True
     }
     app = SessionMiddleware(app, session_opts)
+    app = AclMiddleware(app, bottleblog.app_config)
 
     return app
